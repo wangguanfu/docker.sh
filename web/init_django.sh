@@ -2,7 +2,7 @@
 #
 
 echo '---------------migrate database main------------------------'
-docker exec -it mysite python manage.py migrate
+docker exec -it django python /mysite/mysite/manage.py migrate
 
 echo '---------------create superuser admin-----------------------'
-docker exec -it mysite python manage.py createsuperuser --username admin --email admin@admin.com --database default
+docker exec -it django python /mysite/mysite/manage.py createsuperuser --username admin --email admin@admin.com --database default

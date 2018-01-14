@@ -97,11 +97,11 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         # 'NAME': 'iot',
-        'NAME': 'iot10',
+        'NAME': 'blog',
         'USER': 'root',
         'PASSWORD': 'mysql',
         # 'PASSWORD': '',
-        'HOST':'db',
+        'HOST':'mysql',
         'PORT':'3306',
     }
 }
