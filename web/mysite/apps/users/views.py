@@ -21,8 +21,8 @@ def index(request):#首頁
 
 def login(request):
     if request.method == "GET":
-        return render(request,"login.html")
-        # return JsonResponse({"result": 0, "message": "Everyone can visit."})
+        #return render(request,"login.html")
+        return JsonResponse({"result": 0, "message": "Everyone can visit."})
     if request.method == "POST":
         # user_id = request.user.id or None
         username = request.POST.get("username")
